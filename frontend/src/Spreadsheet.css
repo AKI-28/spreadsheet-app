@@ -1,0 +1,76 @@
+.spreadsheet-container {
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .toolbar {
+    margin-bottom: 10px;
+  }
+  
+  .toolbar button,
+  .toolbar input {
+    margin-right: 5px;
+    padding: 5px;
+  }
+  
+  .spreadsheet {
+    border-collapse: collapse;
+    width: max-content;
+  }
+  
+  .spreadsheet td {
+    border: 1px solid #ccc;
+    padding: 0;
+    position: relative;
+  }
+  
+  .spreadsheet td input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .spreadsheet td input[type="text"] {
+    background: transparent;
+  }
+  
+  .spreadsheet tr td:last-child,
+  .spreadsheet tr:last-child td {
+    border: none;
+  }
+  
+  .spreadsheet tr:last-child td input,
+  .spreadsheet tr td:last-child input {
+    width: 50px;
+    text-align: center;
+    padding: 2px;
+  }
+
+  .resize-handle {
+    position: absolute;
+    background: gray;
+    opacity: 0.5;
+    z-index: 2;
+  }
+  .col-resize {
+    width: 5px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    cursor: col-resize;
+  }
+  .row-resize {
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    cursor: row-resize;
+  }
+  td {
+    position: relative;
+  }
+  
+  
